@@ -1,0 +1,102 @@
+x11proto-bigreqs (1:1.1.1-1slp2) unstable; urgency=low
+
+  * [X11R7.6] upgrade package  
+  * Git: 165.213.180.234:slp/pkgs/xorg/proto/x11proto-bigreqs
+  * Tag: x11proto-bigreqs_1.1.1-1slp2
+
+ -- SooChan Lim <sc1.lim@samsung.com>  Thu, 06 Jan 2011 15:38:13 +0900
+
+x11proto-bigreqs (1:1.1.0-5slp2) unstable; urgency=low
+
+  * To sync git and dpkg
+  * Git: 165.213.180.234:/git/slp/pkgs/xorg/proto/x11proto-bigreqs
+  * Tag: x11proto-bigreqs_1.1.0-5slp2
+
+ -- YoungHoon Jung <yhoon.jung@samsung.com>  Thu, 02 Dec 2010 15:48:22 +0900
+
+x11proto-bigreqs (1:1.1.0-4slp2) unstable; urgency=low
+
+  * update maintainer
+  * Git: 165.213.180.234:/git/slp2.0/slp2.0-pkgs/X11
+  * Tag: x11proto-bigreqs_1.1.0-4slp2
+
+ -- Sung-Jin Park <sj76.park@samsung.com>  Tue, 20 Apr 2010 17:00:18 +0900
+ 
+x11proto-bigreqs (1:1.1.0-3slp2) unstable; urgency=low
+
+  * Changed package name as a pure open souroce code.
+  
+ -- YoungHoon Jung <yhoon.jung@samsung.com>  Thu, 25 Mar 2010 16:54:15 +0900
+   
+x11proto-bigreqs (1:1.1.0-2) unstable; urgency=low
+   
+  * Import debian package
+     
+ -- Sung-Jin Park <sj76.park@samsung.com>  Tue, 01 Dec 2009 21:41:06 +0900
+
+x11proto-bigreqs (1:1.1.0+git20091009.e19e245f-0ubuntu0sarvatt) karmic; urgency=low
+
+  * Checkout from git 20091009 (master branch) up to commit
+    e19e245ff8e5ddedbcc5853786ca55b56f8ab40c
+  * Only added debian/ tree from origin/debian-unstable
+
+ -- Robert Hooker <sarvatt@ubuntu.com>  Fri, 09 Oct 2009 12:08:29 -0400
+
+x11proto-bigreqs (1:1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Run autoreconf at build time.
+  * Add upstream download URL to debian/copyright.
+  * Parse space-separated DEB_BUILD_OPTIONS, and handle parallel=N.
+  * Remove xlibs-static-dev Conflicts/Replaces and x11-common Pre-Depends,
+    which were needed for upgrades from sarge.
+  * Bump Standards-Version to 3.8.3.
+  * Bump debhelper compat level to 5.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 06 Sep 2009 11:31:21 +0200
+
+x11proto-bigreqs (1:1.0.2-5) unstable; urgency=low
+
+  [ Timo Aaltonen ]
+  * Bump the epoch so that this can be synced to Ubuntu in the future.
+
+  [ Julien Cristau ]
+  * Remove Fabio and Branden from Uploaders, with their permission.
+  * Add Vcs-*; drop obsolete CVS info from the description.
+  * Bump Standards-Version to 3.7.3.
+  * Add myself to Uploaders.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 11 May 2008 17:50:06 +0200
+
+x11proto-bigreqs (1.0.2-4) unstable; urgency=low
+
+  * Test for obj-$(DEB_BUILD_GNU_TYPE) before creating it during build;
+    idempotency fix.
+  * Run dh_install w/ --list-missing.
+  * Change debhelper build-dep-indep to a normal build-dep, as dh_clean
+    is called inside the clean rule.
+  * Drop duplicate x11-common dep in -dev package.
+  * Bump standards version to 3.7.2.0.
+  * Version x11-common pre-dep in -dev package to 1:7.0.0 to match
+    the rest of Debian.
+
+ -- Andres Salomon <dilinger@debian.org>  Fri, 21 Jul 2006 02:55:19 -0400
+
+x11proto-bigreqs (1.0.2-3) unstable; urgency=low
+
+  * Upload to unstable
+
+ -- David Nusinow <dnusinow@debian.org>  Thu, 23 Mar 2006 21:35:56 -0500
+
+x11proto-bigreqs (1.0.2-2) experimental; urgency=low
+
+  * Add epoch to versioned Pre-Depends on x11-common to make upgrades
+    from monolithic x11-common work (Closes: #351779).
+
+ -- Michel Dänzer <daenzer@debian.org>  Thu,  9 Feb 2006 16:40:54 +0100
+
+x11proto-bigreqs (1.0.2-1) experimental; urgency=low
+
+  * First x11proto-bigreqs release to Debian.
+
+ -- David Nusinow <dnusinow@debian.org>  Fri, 30 Dec 2005 14:35:08 -0500
