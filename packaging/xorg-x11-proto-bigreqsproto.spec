@@ -7,6 +7,7 @@ Group:      Development/System
 License:    MIT
 URL:        http://www.x.org
 Source0:    http://xorg.freedesktop.org/releases/individual/proto/bigreqsproto-%{version}.tar.gz
+Source1001: packaging/xorg-x11-proto-bigreqsproto.manifest 
 Provides:   bigreqsproto
 BuildRequires: pkgconfig(xorg-macros)
 
@@ -20,6 +21,7 @@ Description: %{summary}
 %setup -q -n %{name}-%{version}
 
 %build
+cp %{SOURCE1001} .
 
 %reconfigure --disable-static \
     --libdir=%{_datadir}
@@ -39,6 +41,7 @@ rm -rf %{buildroot}
 
 
 %files
+%manifest xorg-x11-proto-bigreqsproto.manifest
 %defattr(-,root,root,-)
 %{_includedir}/X11/extensions/bigreqstr.h
 %{_includedir}/X11/extensions/bigreqsproto.h
